@@ -28,6 +28,11 @@ p {
   padding: 2em;
 }
 
+.download-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
 .download-btn {
   background: #00c853;
   color: white;
@@ -46,11 +51,54 @@ p {
   background: #00e676;
 }
 
-.screenshot {
-  max-width: 90%;
+.download-btn:active {
+  transform: scale(0.97);
+}
+
+.dropdown {
+  background: #333;
   border-radius: 10px;
-  margin-top: 1.5em;
   box-shadow: 0 0 10px #000;
+  margin-top: 10px;
+  padding: 0.5em 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  z-index: 10;
+}
+
+.dropdown a {
+  display: block;
+  color: #fff;
+  padding: 0.8em;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.dropdown a:hover {
+  background: #444;
+}
+
+.hidden {
+  display: none;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 2em;
+  color: #00e676;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  color: #ccc;
+}
+
+ul li::before {
+  content: "• ";
+  color: #00e676;
 }
 
 footer {
@@ -81,5 +129,9 @@ a {
 
   p {
     font-size: 0.95em;
+  }
+
+  .dropdown {
+    width: 90%;
   }
 }
