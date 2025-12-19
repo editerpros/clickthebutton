@@ -1,46 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Click the Button – Download</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click The Button — Official</title>
+
   <link rel="stylesheet" href="style.css">
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
 </head>
+
 <body>
 
-<header>
-  <h1>Click the Button</h1>
-  <p>A fast-paced, addictive clicker game!</p>
+<header class="glass">
+  Click The Button
+  <p class="subtitle">The Ultimate Clicking Challenge</p>
 </header>
 
-<div class="content">
-  <div class="download-wrapper">
-    <button class="download-btn" onclick="toggleDropdown()">⬇️ Download Now</button>
-    <div id="download-dropdown" class="dropdown hidden">
-      <a href="https://drive.proton.me/urls/69NBPQ0HSW#oKg4i2Osq0OP" target="_blank">🪟 Windows</a>
-      <a href="https://example.com/mac.zip" target="_blank">🍎 macOS</a>
-      <a href="https://example.com/linux.zip" target="_blank">🐧 Linux</a>
-      <a href="https://drive.proton.me/urls/R1C5VCX3H0#kjC4y7PfO1ef" target="_blank">🤖 Android</a>
-    </div>
+<nav class="glass">
+  <a href="#about">About</a>
+  <a href="#features">Features</a>
+  <a href="#download">Download</a>
+  <a href="#updates">Updates</a>
+</nav>
+
+<section class="hero glass">
+  <h1>Fast. Competitive. Addictive.</h1>
+  <p>Click your way to victory.</p>
+  <a href="#download" class="btn">Download Now</a>
+</section>
+
+<section id="about" class="section glass">
+  <h2>About the Game</h2>
+  <p>
+    Click The Button is a fast-paced reaction game where speed, precision,
+    and focus matter. Compete, unlock achievements, and climb higher.
+  </p>
+</section>
+
+<section id="features" class="section glass">
+  <h2>Game Features</h2>
+  <ul>
+    <li>✔ Achievements System</li>
+    <li>✔ Stats Tracking</li>
+    <li>✔ Mobile Friendly</li>
+    <li>✔ Smooth Animations</li>
+  </ul>
+</section>
+
+<section id="download" class="section glass">
+  <h2>Download</h2>
+
+  <button class="btn" onclick="toggleDropdown()">⬇️ Download</button>
+
+  <div id="download-dropdown" class="dropdown hidden glass">
+    <a href="https://drive.proton.me/urls/69NBPQ0HSW#oKg4i2Osq0OP">🪟 Windows</a>
+    <a href="#">🍎 macOS</a>
+    <a href="#">🐧 Linux</a>
+    <a href="https://drive.proton.me/urls/R1C5VCX3H0#kjC4y7PfO1ef">🤖 Android</a>
   </div>
 
-  <p><strong>Latest Version:</strong> v1.5<br><strong>File Size:</strong> ~42 MB</p>
-  <p>Challenge your friends, unlock achievements, and climb the leaderboard!</p>
+  <p class="counter">
+    ⬇️ Total Downloads: <span id="downloadCount">0</span>
+  </p>
+</section>
 
-  <h2>What's New</h2>
-  <ul>
-    <li>🆕 Daily Challenges added</li>
-    <li>🎮 Controller support enabled</li>
-  </ul>
-</div>
+<section id="updates" class="section glass">
+  <h2>Latest Updates</h2>
+  <p>
+    • Glass UI<br>
+    • Glow Effects<br>
+    • Better Mobile Layout<br>
+    • Performance Improvements
+  </p>
+</section>
 
-<footer>
-  <p>© 2025 EditerPro • <a href="https://editerpro.itch.io/click-the-button" target="_blank">Itch.io Page</a></p>
-  <p>Version 1.5 • Built with ❤️ by EditerPro</p>
+<footer class="glass">
+  © 2025 Click The Button — Team EditerPro
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
-
